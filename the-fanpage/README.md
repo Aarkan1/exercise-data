@@ -1,6 +1,6 @@
 # The fanpage exercise
 
-<img src="https://github.com/Aarkan1/exercises/raw/main/the-fanpage/assets/fanpage-banner.png.jpg" alt="fanpage-banner.png" style="width: 100%; max-width: 700px;">
+<img src="https://github.com/Aarkan1/exercises/raw/main/the-fanpage/assets/fanpage-banner.png" alt="fanpage-banner" style="width: 100%; max-width: 700px;">
 
 Build a fanpage for your favorite genre. It starts small, but has huge possibilities to be a long term project. 
 
