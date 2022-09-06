@@ -8,7 +8,7 @@ Work solo or in groups.
 
 The functionalities below isn't prioritized. You can do them in any order you like.
 
-Recommend doing the basics first with minimal styling. If you get the time you could look at the **Design inspirations** and try to implement better styling.
+Recommend doing the basics first with minimal styling. If you get the time you could look at the [Design inspirations](#design-inspiration) and try to implement better styling.
 
 ### Getting started
 
@@ -48,11 +48,13 @@ Follow up by installing React with React Router Dom in that directory.
 
 - Movies API: https://www.omdbapi.com/
 
+<br>
 <img src="https://github.com/Aarkan1/exercises/raw/main/the-fanpage/assets/heroes-banner.jpg" alt="heroes-banner" width="400">
 
 - Superheroes API: https://www.superheroapi.com/
 - [Superheroes JSON](https://raw.githubusercontent.com/Aarkan1/exercises/main/the-fanpage/assets/superheroes.json)
 
+<br>
 <img src="https://github.com/Aarkan1/exercises/raw/main/the-fanpage/assets/pokemon-banner.png" alt="pokemon-banner" width="400">
 
 - Pokémon API: https://pokeapi.co/
