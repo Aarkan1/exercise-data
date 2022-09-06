@@ -37,6 +37,7 @@ Follow up by installing React with React Router Dom in that directory.
 - Be able to remove a bookmark/favorite.
 - Responsive design that works on both mobile and desktop.
 - Persist bookmarks/favorites between page reloads. _(localStorage, indexedDB, etc)_
+- Add [error boundaries](https://reactjs.org/docs/error-boundaries.html) to handle broken data in a card.
 
 ### Epic functionality
 
