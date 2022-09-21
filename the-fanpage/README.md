@@ -76,6 +76,7 @@ Follow up by installing React with React Router Dom in that directory.
 - [YouTube - React Router V6 Tutorial](https://youtu.be/UjHT_NKR_gU)
 - [Typescript documentation](https://www.typescriptlang.org/)
 - [React with Typescript documentation](https://react-typescript-cheatsheet.netlify.app/)
+- [Rendering Lists in React](https://dev.to/tejeshwer25/rendering-lists-in-react-55p4)
 
 ## Design inspiration
 
