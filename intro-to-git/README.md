@@ -111,3 +111,29 @@ For this task, you will work in a small group. Between 2 and 4 people is about r
 1. Now, `pull` but using the `--rebase` flag.
 1. Use `git log` and `gitk` to verify that there is no merge commit, and the DAG is linear.
 1. Notice that your commit is the latest one, even though temporally the other member of your team made their commit afterwards. Why is this?
+
+## Exercise 5
+
+Use the same group as in Exercise 3. Use the same repo in this exercise.
+
+### Main Task
+
+1. One of the group members should create a new branch and make a local `commit`, then `push` it.
+2. The same member should create a `pull request` at Github. What options do you have? Look together and discuss what you see.
+3. Another member should make a comment in the `diff` output. How does this look like? Can you comment multiple lines at the same time?
+4. Approve the pull request and merge it. Checkout the master branch, do a `pull` and look at the `git log`.
+5. Two members of the group should now create different branches, make a `commit` locally, and `push` it. Each should create a `pull request`. To keep things simple, be sure to edit different files.
+6. Approve and merge one of the pull requests. What happens to the runner-up when one pull request gets merged?
+7. The runner-up should checkout master and `pull`. As a group, look at the output of the command. Additionally, look at the `git log`, and notice that there is a merge commit. You may also wish to view the DAG in `gitk`.
+8. The runner-up should merge master to the pull request branch, make a commit and push.
+9. Look at the pull request. Has it updated with the latest changes? Does it need a refresh?
+10. Merge pull request and repeat from step 5 a couple of times, to practice.
+
+### Stretch Task
+
+1. Now create a situation where two group members both edit the same line in the same file and `commit` it locally in different feature branches. `Push` and create a pull request.
+2. When the runner-up creates a pull request, they should get a merge conflict.
+3. Look as a group at the pull request in conflict.
+4. The runner-up should do a `pull` on master. Then `merge` master to the pull request branch and resolve the conflicts. For a more clean history use `rebase`. Remember, a rebase does not have a merge commit.
+5. Use the `add` command to stage the fix, and then use `commit` to make the merge commit.
+6. `Push` the fix to update the pull request. Look at the pull request together.
