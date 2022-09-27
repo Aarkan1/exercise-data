@@ -2,7 +2,7 @@
 
 These exercises aim to give you some practice with using the Git version control system. Each exercise comes in two parts: a **main task** that most, if not all, course attendees should be able to complete in the allocated time, as well as a **stretch task** for those who complete the main task quickly.
 
-## Exercise 1
+## Exercise 1 - Basic operations
 
 ### Main Task
 
@@ -33,7 +33,7 @@ These exercises aim to give you some practice with using the Git version control
 1. Now try the `--stat` option did on the diff command. Find out if this also works with the `show` command. How about the `log` command?
 1. Imagine you want to see a diff that summarizes all that happened between two commit identifiers. Use the `diff` command, specifying two commit identifiers joined by two dots (that is, something like `abc123..def456`). Check the output is what you expect.
 
-## Exercise 2
+## Exercise 2 - Branching and merging
 
 ### Main Task
 
@@ -65,7 +65,7 @@ These exercises aim to give you some practice with using the Git version control
     - Look at the help page for merge, and find out how you specify a custom message for the merge commit if it is automatically generated.
     - Look at the help page for merge, and find out how to prevent Git from automatically committing the merge commit it generates, but instead give you chance to inspect it and merge it yourself.
 
-## Exercise 3
+## Exercise 3 - Remotes
 
 For this task, you will work in a small group. Between 2 and 4 people is about right.
 
@@ -88,31 +88,7 @@ For this task, you will work in a small group. Between 2 and 4 people is about r
 1. Look as a group at the file in conflict, and resolve it.
 1. Use the `add` command to stage the fix, and then use `commit` to make the merge commit. Notice how this procedure is exactly the one you got used to when resolving conflicts in branches.
 
-## Exercise 4
-
-### Main Task
-
-1. Make a commit, and make a silly typo in the commit message.
-1. Use the `--amend` flag to enable you to fix the commit message.
-1. Look at the `log` and notice how the mistake is magically gone.
-1. Now make a commit where you make a typo in one of the files. Once again, use `--amend` to magic away your problems.
-1. Create a branch. Make a commit.
-1. Now switch back to your master branch. Make a (non-conflicting) commit there also.
-1. Now switch back to your branch.
-1. Use the `rebase` command in your branch. Look at the DAG in `gitk`, and note that you have the commit from the master branch, but no merge commit.
-1. Make one more commit in your branch.
-1. Return to master. Merge your branch. Notice how, thanks to the rebase, this is a fast-forward merge.
-
-### Stretch Task
-
-1. Find somebody from your team from the previous exercise. Have them `push` a commit to the central repository.
-1. Make a commit locally yourself also. Note that you should **not** have pulled their commit at this point.
-1. Try to `push`, and watch it fail.
-1. Now, `pull` but using the `--rebase` flag.
-1. Use `git log` and `gitk` to verify that there is no merge commit, and the DAG is linear.
-1. Notice that your commit is the latest one, even though temporally the other member of your team made their commit afterwards. Why is this?
-
-## Exercise 5
+## Exercise 4 - Pull requests
 
 Use the same group as in Exercise 3. Use the same repo in this exercise.
 
@@ -137,3 +113,27 @@ Use the same group as in Exercise 3. Use the same repo in this exercise.
 4. The runner-up should do a `pull` on master. Then `merge` master to the pull request branch and resolve the conflicts. For a more clean history use `rebase`. Remember, a rebase does not have a merge commit.
 5. Use the `add` command to stage the fix, and then use `commit` to make the merge commit.
 6. `Push` the fix to update the pull request. Look at the pull request together.
+
+## Exercise 5 - Rebasing
+
+### Main Task
+
+1. Make a commit, and make a silly typo in the commit message.
+1. Use the `--amend` flag to enable you to fix the commit message.
+1. Look at the `log` and notice how the mistake is magically gone.
+1. Now make a commit where you make a typo in one of the files. Once again, use `--amend` to magic away your problems.
+1. Create a branch. Make a commit.
+1. Now switch back to your master branch. Make a (non-conflicting) commit there also.
+1. Now switch back to your branch.
+1. Use the `rebase` command in your branch. Look at the DAG in `gitk`, and note that you have the commit from the master branch, but no merge commit.
+1. Make one more commit in your branch.
+1. Return to master. Merge your branch. Notice how, thanks to the rebase, this is a fast-forward merge.
+
+### Stretch Task
+
+1. Find somebody from your team from the previous exercise. Have them `push` a commit to the central repository.
+1. Make a commit locally yourself also. Note that you should **not** have pulled their commit at this point.
+1. Try to `push`, and watch it fail.
+1. Now, `pull` but using the `--rebase` flag.
+1. Use `git log` and `gitk` to verify that there is no merge commit, and the DAG is linear.
+1. Notice that your commit is the latest one, even though temporally the other member of your team made their commit afterwards. Why is this?
